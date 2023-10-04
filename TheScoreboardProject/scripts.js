@@ -1,30 +1,30 @@
-const column1 = document.getElementById('column1');
-const column2 = document.getElementById('column2');
+const scoreElements = [];
 
-function addScore(column, playerName, score) {
-    const scoreDiv = document.createElement('div');
-    scoreDiv.className = 'score';
-    scoreDiv.innerHTML = `<p>${playerName}: ${score}</p>`;
-    column.appendChild(scoreDiv);
-    updateScorePosition(column);
+// Initialize the array with score elements
+for (let i = 1; i <= 17; i++) {
+    scoreElements.push(document.getElementById(`score_${i}`));
 }
 
-function updateScorePosition(column) {
-    const scores = Array.from(column.querySelectorAll('.score'));
-    scores.sort((a, b) => {
-        const scoreA = parseInt(a.innerText.split(': ')[1]);
-        const scoreB = parseInt(b.innerText.split(': ')[1]);
-        return scoreB - scoreA;
-    });
-    scores.forEach((score, index) => {
-        score.style.marginTop = `${index * 60}px`;
-    });
+// Function to submit a score
+function submitScore(inputName) {
+    // Find the index of the element in the array based on the input name
+    const index = parseInt(inputName.split('_')[1]) - 1;
+
+    // Get the value entered in the input field
+    const inputElement = scoreElements[index].querySelector('input');
+    const score = parseInt(inputElement.value);
+
+    // Update the scores array with the new score
+    scores[index] = score;
+
+    // Sort the scores array in descending order
+    scores.sort((a, b) => b - a);
+
+    // Update the display order based on the sorted scores
+    for (let i = 0; i < scores.length; i++) {
+        scoreElements[i].querySelector('input').value = scores[i];
+    }
 }
 
-// Example usage:
-addScore(column1, 'Player 1', 50);
-addScore(column1, 'Player 2', 75);
-addScore(column1, 'Player 3', 60);
-addScore(column2, 'Player 4', 90);
-addScore(column2, 'Player 5', 70);
-addScore(column2, 'Player 6', 85);
+// Initial scores for each team (change these as needed)
+const scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
