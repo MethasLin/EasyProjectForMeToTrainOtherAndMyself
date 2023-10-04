@@ -1,0 +1,336 @@
+  
+        body {
+            background-color: #4B56B4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Adjusted to place .head at the top */
+            min-height: 100vh;
+        }
+
+        .head {
+            width : 660px;
+            height : 100px;
+            position : relative;
+            margin-top : 10px;
+            background-color : #EAD6F7;
+        }
+        .head p{
+            color: #000;
+            text-align: center;
+            font-family: Inter;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-top: 20px;
+        }
+
+        .scoreboard {
+            position: relative;
+            width: 100%;
+            display: flex;            
+            align-items: center; /* Center the columns horizontally */
+        }
+
+        .column1{
+            width: 50%;
+            height: 500px; /* Adjusted width to match score_1 and score_2 */
+            margin-bottom: 10px;
+        }
+        .column2 {
+            width: 50%;
+            height: 500px; /* Adjusted width to match score_1 and score_2 */
+            margin-bottom: 10px;
+        }
+        .score_1{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_1 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_2{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_2 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_3{
+            width : 650px;
+            height : 60px;
+            background-color: #13d1e2;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_3 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_4{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_4 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_5{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_5 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_6{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_6 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_7{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_7 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_8{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_8 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_9{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_9 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_10{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_10 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_11{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_11 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_12{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_12 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_13{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_13 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_14{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_14 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_15{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_15 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_16{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_16 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
+        .score_17{
+            width : 650px;
+            height : 60px;
+            background-color: #EAD6F7;
+            flex-shrink : 0;
+            margin : auto;
+            margin-top : 20px;
+        }
+        .score_17 p{
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-left: 100px;
+        }
