@@ -17,6 +17,8 @@ body {
     margin-top: 10px;
     background-color: #ae0c0c;
     border: 21px solid #FAF4E1;
+    box-shadow: 15px 15px #1d1b1b;
+
 }
 
 .head p {
@@ -69,10 +71,29 @@ body {
     flex-shrink: 0;
     margin: auto;
     margin-top: 20px;
-    box-shadow: 10px 10px #000;
+    box-shadow: 10px 10px #1d1b1b;
 }
 
 
+#teamname1,
+#teamname2,
+#teamname3,
+#teamname4,
+#teamname5,
+#teamname6,
+#teamname7,
+#teamname8,
+#teamname9,
+#teamname10,
+#teamname11,
+#teamname12,
+#teamname13,
+#teamname14,
+#teamname15,
+#teamname16,
+#teamname17 {
+    margin-left: 2.5%;
+}
 
 
 
@@ -95,15 +116,38 @@ body {
 .top_17 p {
     color: #000;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     margin-left: 5%;
 }
-.top_15 p {
-  font-size: 30px;
+#score1,
+#score2,
+#score3,
+#score4,
+#score5,
+#score6,
+#score7,
+#score8,
+#score9,
+#score10,
+#score11,
+#score12,
+#score13,
+#score14,
+#score15,
+#score16,
+#score17{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 15%;
 }
+
 .top_1 input,
 .top_2 input,
 .top_3 input,
@@ -123,10 +167,10 @@ body {
 .top_17 input {
     width: 25px;
     float: right;
-    margin-top: 5%;
+    margin-top: 3.5%;
     margin-right: 5%;
-
 }
+
 .top_1 button,
 .top_2 button,
 .top_3 button,
@@ -145,9 +189,5 @@ body {
 .top_16 button,
 .top_17 button {
     float: right;
-    margin-top: 5%;
-}
-.top_15 p span:first-child{
-    font-size: 40px;
-
+    margin-top: 3.5%;
 }
