@@ -69,6 +69,7 @@ body {
     flex-shrink: 0;
     margin: auto;
     margin-top: 20px;
+    box-shadow: 10px 10px #000;
 }
 
 
@@ -98,10 +99,10 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-left: 100px;
+    margin-left: 5%;
 }
 .top_15 p {
-  font-size: 20px;
+  font-size: 30px;
 }
 .top_1 input,
 .top_2 input,
@@ -121,4 +122,32 @@ body {
 .top_16 input,
 .top_17 input {
     width: 25px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+
+}
+.top_1 button,
+.top_2 button,
+.top_3 button,
+.top_4 button,
+.top_5 button,
+.top_6 button,
+.top_7 button,
+.top_8 button,
+.top_9 button,
+.top_10 button,
+.top_11 button,
+.top_12 button,
+.top_13 button,
+.top_14 button,
+.top_15 button,
+.top_16 button,
+.top_17 button {
+    float: right;
+    margin-top: 5%;
+}
+.top_15 p span:first-child{
+    font-size: 40px;
+
 }
