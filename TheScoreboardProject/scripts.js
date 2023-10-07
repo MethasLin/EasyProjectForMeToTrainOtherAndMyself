@@ -11,55 +11,161 @@ for (let i = 1; i <= 17; i++) {
 // Generate random scores for 17 teams
 // Define a 2D array to store team names and scores
 var teams = [
-    ["ทีมเวิร์ค", Math.floor(Math.random() * 101)], // Replace 1000 with the actual score for team 1
-    ["Team Clutch", Math.floor(Math.random() * 101)],   // Replace 500 with the actual score for team 2
-    ["Tiwaz", Math.floor(Math.random() * 101)],         // Replace 800 with the actual score for team 3
-    ["MiMT", Math.floor(Math.random() * 101)],          // Replace 700 with the actual score for team 4
-    ["Clockwisefly", Math.floor(Math.random() * 101)],  // Replace 600 with the actual score for team 5
-    ["Mamypoko", Math.floor(Math.random() * 101)],      // Replace 900 with the actual score for team 6
-    ["แม่ประนอมสั่งลุย", Math.floor(Math.random() * 101)], // Replace 300 with the actual score for team 7
-    ["ไก่คาราเกะชุบแป้งฯ", Math.floor(Math.random() * 101)], // Replace 400 with the actual score for team 8
-    ["ตะวันพันแสง", Math.floor(Math.random() * 101)], // Replace 200 with the actual score for team 9
-    ["ขอตึงๆ", Math.floor(Math.random() * 101)],      // Replace 150 with the actual score for team 10
-    ["Emperor", Math.floor(Math.random() * 101)],       // Replace 350 with the actual score for team 11
-    ["ปลากระพงชุบแป้งฯ", Math.floor(Math.random() * 101)], // Replace 250 with the actual score for team 12
-    ["AMI&SCI", Math.floor(Math.random() * 101)],       // Replace 450 with the actual score for team 13
-    ["Sense Engineer", Math.floor(Math.random() * 101)], // Replace 650 with the actual score for team 14
-    ["Boss dada team ฯ", Math.floor(Math.random() * 101)], // Replace 550 with the actual score for team 15
-    ["อะไรนะ", Math.floor(Math.random() * 101)],       // Replace 350 with the actual score for team 16
-    ["เน้นเข้าร่วมฯ", Math.floor(Math.random() * 101)], // Replace 700 with the actual score for team 17
+    {
+        name: "ทีมเวิร์ค",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamwork_score')[0], // Input element
+        buttonElement: document.querySelector('.top_1 button')
+    },
+    {
+        name: "Team Clutch",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamclutch_score')[0], // Input element
+        buttonElement: document.querySelector('.top_2 button')
+    },
+    {
+        name: "Tiwaz",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamTiwaz_score')[0], // Input element
+        buttonElement: document.querySelector('.top_3 button')
+    },
+    {
+        name: "MiMT",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamMiMT_score')[0], // Input element
+        buttonElement: document.querySelector('.top_4 button')
+    },
+    {
+        name: "Clockwisefly",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamClockwisefly_score')[0], // Input element
+        buttonElement: document.querySelector('.top_5 button')
+    },
+    {
+        name: "Mamypoko",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teaMamypoko_score')[0], // Input element
+        buttonElement: document.querySelector('.top_6 button')
+    },
+    {
+        name: "แม่ประนอมสั่งลุย",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamแม่ประนอมสั่งลุย_score')[0], // Input element
+        buttonElement: document.querySelector('.top_7 button')
+    },
+    {
+        name: "ไก่คาราเกะชุบแป้งฯ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamไก่คาราเกะชุบแป้งฯ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_8 button')
+    },
+    {
+        name: "ตะวันพันแสง",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamตะวันพันแสง_score')[0], // Input element
+        buttonElement: document.querySelector('.top_9 button')
+    },
+    {
+        name: "ขอตึงๆ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamขอตึงๆ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_10 button')
+    },
+    {
+        name: "Emperor",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamEmperor1_score')[0], // Input element
+        buttonElement: document.querySelector('.top_11 button')
+    },
+    {
+        name: "ปลากระพงชุบแป้งฯ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamปลากระพงชุบแป้งฯ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_12 button')
+    },
+    {
+        name: "AMI&SCI",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamAMI&SCI_score')[0], // Input element
+        buttonElement: document.querySelector('.top_13 button')
+    },
+    {
+        name: "Sense Engineer",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamSense Engineer_score')[0], // Input element
+        buttonElement: document.querySelector('.top_14 button')
+    },
+    {
+        name: "Boss dada team ฯ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamBoss dada team ฯ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_15 button')
+    },
+    {
+        name: "อะไรนะ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamอะไรนะ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_16 button')
+    },
+    {
+        name: "เน้นเข้าร่วม ฯ",
+        score: 0, // Initialize the score to 0
+        inputElement: document.getElementsByName('teamเน้นเข้าร่วม ฯ_score')[0], // Input element
+        buttonElement: document.querySelector('.top_17 button')
+    }
 ];
 
+
 // Sort the teams based on scores in descending order
-teams.sort((a, b) => b[1] - a[1]);
+teams.sort((a, b) => b.score - a.score);
 
 // Update team names and scores in the HTML
 for (let i = 0; i < 17; i++) {
     const teamNameElement = document.getElementById('teamname' + (i + 1));
     const scoreElement = document.getElementById('score' + (i + 1));
+    const inputElement = teams[i].inputElement;
 
-    if (teamNameElement && scoreElement) {
-        teamNameElement.textContent = teams[i][0];
-        scoreElement.textContent = teams[i][1];
+    if (teamNameElement && scoreElement && inputElement) {
+        teamNameElement.textContent = teams[i].name;
+        scoreElement.textContent = teams[i].score;
+        inputElement.value = ''; // Clear the input field after updating
     }
 }
 
 
+function submitScore(inputName) {
+    // Find the team with the matching input name
+    const team = teams.find(team => team.inputElement.name === inputName);
 
+    if (team) {
+        const inputValue = team.inputElement.value;
+        const parsedValue = parseInt(inputValue);
 
+        // Check if the input is a valid number
+        if (!isNaN(parsedValue)) {
+            // Update the team's score and input value
+            team.score = parsedValue;
+            team.inputElement.value = ''; // Clear the input field
 
+            // Sort the teams based on scores in descending order
+            teams.sort((a, b) => b.score - a.score);
 
-// Sort the teams based on scores in descending order
-teams.sort((a, b) => b[1] - a[1]);
+            // Update team names and scores in the HTML
+            for (let i = 0; i < 17; i++) {
+                const teamNameElement = document.getElementById('teamname' + (i + 1));
+                const scoreElement = document.getElementById('score' + (i + 1));
 
-// Update team names and scores in the HTML
-for (let i = 0; i < 17; i++) {
-    const teamNameElement = document.getElementById('teamname' + (i + 1));
-    const scoreElement = document.getElementById('score' + (i + 1));
-
-    if (teamNameElement && scoreElement) {
-        teamNameElement.textContent = teams[i][0];
-        scoreElement.textContent = teams[i][1];
+                if (teamNameElement && scoreElement) {
+                    teamNameElement.textContent = teams[i].name;
+                    scoreElement.textContent = teams[i].score;
+                }
+            }
+        } else {
+            // Handle the case where the input is not a valid number
+            alert('Please enter a valid number for the score.');
+        }
+    } else {
+        // Handle the case where no team with the given input name is found
+        alert('Team not found.');
     }
 }
-

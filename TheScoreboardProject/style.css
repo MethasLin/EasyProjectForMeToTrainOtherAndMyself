@@ -37,6 +37,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: 1%;
     /* Center the columns horizontally */
 }
 
@@ -70,10 +71,8 @@ body {
     background-color: #FAF4E1;
     flex-shrink: 0;
     margin: auto;
-    margin-top: 20px;
     box-shadow: 10px 10px #1d1b1b;
 }
-
 
 #teamname1,
 #teamname2,
@@ -92,28 +91,33 @@ body {
 #teamname15,
 #teamname16,
 #teamname17 {
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    float: left;
     margin-left: 2.5%;
+    margin-top: 2%;
 }
 
-
-
-.top_1 p,
-.top_2 p,
-.top_3 p,
-.top_4 p,
-.top_5 p,
-.top_6 p,
-.top_7 p,
-.top_8 p,
-.top_9 p,
-.top_10 p,
-.top_11 p,
-.top_12 p,
-.top_13 p,
-.top_14 p,
-.top_15 p,
-.top_16 p,
-.top_17 p {
+.top_1 .p,
+.top_2 .p,
+.top_3 .p,
+.top_4 .p,
+.top_5 .p,
+.top_6 .p,
+.top_7 .p,
+.top_8 .p,
+.top_9 .p,
+.top_10 .p,
+.top_11 .p,
+.top_12 .p,
+.top_13 .p,
+.top_14 .p,
+.top_15 .p,
+.top_16 .p,
+.top_17 .p {
     color: #000;
     font-family: Inter;
     font-size: 30px;
@@ -121,7 +125,10 @@ body {
     font-weight: 800;
     line-height: normal;
     margin-left: 5%;
+    margin-top: 2%;
+    float: left;
 }
+
 #score1,
 #score2,
 #score3,
@@ -139,13 +146,16 @@ body {
 #score15,
 #score16,
 #score17{
+    width: 50px;
     color: #000;
     font-family: Inter;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-left: 15%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 1.5%;
 }
 
 .top_1 input,
@@ -165,10 +175,12 @@ body {
 .top_15 input,
 .top_16 input,
 .top_17 input {
-    width: 25px;
+    width: 30px;
+    height: 17.5px;
     float: right;
     margin-top: 3.5%;
     margin-right: 5%;
+    background-color: #ffffff;
 }
 
 .top_1 button,
@@ -189,5 +201,6 @@ body {
 .top_16 button,
 .top_17 button {
     float: right;
+    font-size: 15px;
     margin-top: 3.5%;
 }
