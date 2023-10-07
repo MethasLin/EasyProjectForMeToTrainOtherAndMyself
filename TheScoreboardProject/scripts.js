@@ -118,6 +118,9 @@ function submitScore(teamIndex) {
 
         // Check if the input is a valid number
         if (!isNaN(parsedValue)) {
+            // Get the old score for this team
+            const oldScore = team.score;
+
             // Update the team's score and input value
             team.score = parsedValue;
 
@@ -130,8 +133,27 @@ function submitScore(teamIndex) {
                 const scoreElement = document.getElementById('score' + (i + 1));
 
                 if (teamNameElement && scoreElement) {
-                    teamNameElement.textContent = teams[i].name;
-                    scoreElement.textContent = teams[i].score;
+                    // Check if this team's score has changed
+                    if (teams[i].score !== oldScore) {
+                        // Set the new team name and score with fade-in animation
+                        teamNameElement.textContent = teams[i].name;
+                        scoreElement.textContent = teams[i].score;
+
+                        // Apply the fade-in animation (same code as mentioned in the previous response)
+                        teamNameElement.style.opacity = 0;
+                        scoreElement.style.opacity = 0;
+
+                        requestAnimationFrame(function () {
+                            teamNameElement.style.transition = 'opacity 1s';
+                            scoreElement.style.transition = 'opacity 1s';
+                            teamNameElement.style.opacity = 1;
+                            scoreElement.style.opacity = 1;
+                            setTimeout(function () {
+                                teamNameElement.style.transition = '';
+                                scoreElement.style.transition = '';
+                            }, 1000);
+                        });
+                    }
                 }
             }
 
